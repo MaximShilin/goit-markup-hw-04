@@ -1,0 +1,273 @@
+/*---------GLOBAL---------*/
+:root {
+    --brand-color: #4D5AE5;
+    --brand-color-team: #F4F4FD;
+    --pressed-state-color: #404BBF;
+    --background-color: #FFFFFF;
+    --title-color: #2E2F42;
+    --text-color: #434455;
+    --footer-text-color:#E7E9FC;
+    --border-color: #E7E9FC;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;}
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color); font-size: 16px;
+    background: var(--background-color)}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;}
+
+.conteiner {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section { 
+    padding-top: 120px;
+    padding-bottom: 120px;}
+
+/*---------LOGO---------*/
+.header-logo-web, .footer-logo-web {
+    color: var(--brand-color);}
+.header-logo-studio {
+    color: var(--title-color)}
+.footer-logo-studio {
+    color: var(--brand-color-team);}
+.header-logo, .footer-logo {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.33;
+    letter-spacing: 0.03em;}
+
+/*---------HEDER---------*/
+.header {
+    background: var(--background-color);
+    border-bottom: 1px solid var(--border-color);}
+.header-logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 76px;}
+.header-link li {
+    margin: right 40px;}
+.header-navigation {
+    display: flex;
+    align-items: center;}
+.header-list {
+    display: flex;
+    gap: 40px;}
+.header-link { 
+    font-weight: 500;
+    line-height: 1.5;
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;}
+.header-link:is(:hover, :focus) { 
+    color: var(--pressed-state-color);}
+.heder-menu {
+    display: flex;
+    margin-left: auto;
+    gap: 40px;}
+.mail-link, .tel-link {
+    display: block;
+    color: inherit;
+    line-height: 1.5;
+    text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 24px;}
+.mail-link:is(:hover, :focus) {
+    color: var(--pressed-state-color);}
+.tel-link:is(:hover, :focus) {
+    color: var(--pressed-state-color);}
+/*---------Hiro-Section---------*/
+.hiro {
+    background: var(--title-color);
+    padding: 188px 0;}
+.hiro-title {
+    color: var(--background-color);
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    width: 496px;
+}
+
+.hiro-btn {
+    min-width: 169px;
+    cursor: pointer;
+    background-color: var(--brand-color);
+    color: var(--background-color);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0ch;
+    text-align: center;
+    padding: 16px 32px;
+    align-items: center;
+    display: block;  
+    margin: 0 auto;
+}
+.hiro-btn:is(:hover, :focus) {
+    background-color: var(--pressed-state-color);}
+
+/*---------Advantages-Section---------*/
+.advantages-list {
+    display: flex;
+    flex-basis: auto;
+    gap: 24px;}
+.advantages-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;}
+.advantages-text {
+    width: 264px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;}
+
+/*---------Examples-Section---------*/
+.examples {
+    padding-top: 0;}
+.examples-list {
+    display: flex;
+    gap: 24px;}
+.examples-title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    margin-bottom: 72px;}
+
+/*---------Team-Section---------*/
+.team {
+    background: var(--brand-color-team);
+}
+.team-list {
+    display: flex;
+    flex-basis: auto;
+    gap: 24px;}
+.team-title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    margin-bottom: 72px;}
+.team-item {
+    background: var(--background-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+.team-item-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 8px;}
+.team-item-cards {
+    padding: 32px;}
+.team-item-text {
+    font-family: 'Roboto';
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;}
+
+/*---------Portfolio-Section---------*/
+.portfolio {
+    padding-top: 96px;}
+.portfolio-btn {
+    cursor: pointer;
+    color: var(--brand-color);
+    background-color: var(--brand-color-team);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 12px 24px;
+    display: block;
+    margin: 0 auto;
+}
+
+.portfolio-btn:is(:hover, :focus) {
+    border-color: transparent;
+    color: var(--background-color);
+    background-color: var(--pressed-state-color);}
+
+.portfolio-list {
+    display: flex;
+    justify-content: center;
+    flex-basis: auto;
+    gap: 24px;
+  margin-bottom: 72px;}
+
+/*---------Buttons-Section---------*/
+.projects-cards { 
+    padding: 32px 16px;
+    border-bottom: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);}
+.projects-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;}
+.projects-text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;}
+.projects-list {
+    display: flex;
+    flex-basis: auto;
+    flex-wrap: wrap;
+    gap: 48px 24px;}
+/*---------Futer---------*/
+.footer {
+    background:var(--title-color);
+    padding: 100px 0}
+.footer-title {
+    width: 264px;
+    color: var(--footer-text-color);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-top:  17px;}
