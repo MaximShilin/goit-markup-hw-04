@@ -106,8 +106,19 @@ body {
 .tel-link:is(:hover, :focus) {
     color: var(--pressed-state-color);}
 /*---------Hiro-Section---------*/
+
+
 .hiro {
     background: var(--title-color);
+    max-width: 1440px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient( to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ),
+    url(/images/people-office1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding: 188px 0;}
 .hiro-title {
     color: var(--background-color);
@@ -154,12 +165,30 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-top: 8px;
     margin-bottom: 8px;}
 .advantages-text {
     width: 264px;
     line-height: 1.5;
     letter-spacing: 0.02em;}
-
+.advantages-item::before {
+    display: block;
+    content: "";
+    height: 112px;
+    border-radius: 4px;
+    background-color: var(--brand-color-team);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.strategy-icon::before {
+    background-image: url(/images/strategyicon.svg);}
+.punctuality-icon::before {
+    background-image: url(/images/punctualityicon.svg);}
+.diligence-icon::before {
+    background-image: url(/images/diligenceicon.svg);}
+.technologies-icon::before {
+    background-image: url(/images/technologiesicon.svg);
+}
 /*---------Examples-Section---------*/
 .examples {
     padding-top: 0;}
@@ -264,10 +293,34 @@ body {
 /*---------Futer---------*/
 .footer {
     background:var(--title-color);
-    padding: 100px 0}
+    padding: 100px 0;}
 .footer-title {
     width: 264px;
     color: var(--footer-text-color);
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-top:  17px;}
+.footer-links-title {
+    color: var(--footer-text-color);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;}
+.footer-list {
+    display: flex;}
+.footer-logoandtitle {
+    margin-right: 120px;}
+.footer-links-list {display: flex;
+gap: 16px;}
+.footer-link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--text-color);
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;}
+.instagram {background-image: url(/images/instagram2.svg);}
+.facebook {background-image: url(/images/facebook2.svg);}
+.twitter {background-image: url(/images/twitter2.svg);}
+.linkedin {background-image: url(/images/linkedin2.svg);}
